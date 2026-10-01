@@ -823,7 +823,7 @@ body {
   }
   /* サウンドマーク */
   #sound-toggle {
-    top: 60%;
-    left: 15%;
+    left: 10%;
+    bottom: 20%;
   }
 }
