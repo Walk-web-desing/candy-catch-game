@@ -282,7 +282,7 @@ body {
   left: 35%;
   width: 48px;
   height: 48px;
-  border: 2px solid #FFB6C1;
+  border: 2px solid #ffb6c1;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.85);
   font-size: 25px;
@@ -574,6 +574,11 @@ body {
   #restart-countdown {
     font-size: 42px;
   }
+  /* サウンドマーク */
+  #sound-toggle {
+    top: 55%;
+    left: 30%;
+  }
 }
 /* ==============
    タブレット・スマホ
@@ -709,6 +714,11 @@ body {
     margin-top: 20px;
     font-size: 14px;
   }
+  /* サウンドマーク */
+  #sound-toggle {
+    top: 65%;
+    left: 25%;
+  }
 }
 /* ============
    小さいスマホ
@@ -810,5 +820,10 @@ body {
   }
   #restart-countdown {
     font-size: 38px;
+  }
+  /* サウンドマーク */
+  #sound-toggle {
+    top: 60%;
+    left: 15%;
   }
 }
