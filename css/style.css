@@ -824,6 +824,6 @@ body {
   /* サウンドマーク */
   #sound-toggle {
     left: 10%;
-    bottom: 15%;
+    top: 120px;
   }
 }
