@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ファンアートの一環で自作ゲームです" />
+    <link rel="icon" href="./img/favicon.ico" />
+    <!-- 制作css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Google Fonts -->
+    <!-- M PLUS Rounded 1c -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet" />
+    <title>かさでキャッチゲーム | ファンアート自作ゲーム</title>
+  </head>
+  <body>
+    <main>
+      <!-- タイトル画面 -->
+      <div id="title-screen">
+        <div class="bk-grund">
+          <h1>かさでキャッチゲーム</h1>
+          <div class="youseisann-position">
+            <img src="./img/tuyunoyouseisann.PNG" alt="梅雨の妖精さん" />
+          </div>
+          <p>
+            矢印キーを使って傘を動かしアイテムをキャッチしよう！<br />
+            1ゲーム 30秒
+          </p>
+          <div class="score-point">
+            <ul>
+              得点
+              <li><img src="./img/blue.PNG" alt="キャンディー" class="candy-icon" />：1～4 point</li>
+              <li><img src="./img/same.PNG" alt="さめ" class="shark-icon" />&ensp;：7～10 point</li>
+              <li><img src="./img/onion1.PNG" alt="たまねぎ" class="onion-icon" />&ensp;&ensp;：-3～-7 point</li>
+            </ul>
+          </div>
+          <button id="start-button">START</button>
+          <button id="sound-toggle" type="button">🔊</button>
+        </div>
+        <p class="caption">
+          ※2026年10月現在の時点でYouTube登録者数130万人overの某2.5次元タレントグループ様のファンアート第一弾として梅雨の妖精さんのゲームを作ってみました。<br />
+          ぜひ遊んでみてください。
+        </p>
+        <p class="caption">
+          ※使用画像：いらすとや様、ぴよたそ様、アイビスペイント様（トレス素材/柄素材/キャンディー素材）<br />※使用音源：BGM・ジングル・効果音 フリー素材サイト OtoLogic様、効果音ラボ様<br />
+          制作者：ねるこあいす / 投稿日：2026/10/01 version0.1
+        </p>
+        <div id="countdown"></div>
+      </div>
+      <!-- ゲーム画面 -->
+      <div id="game-screen">
+        <div class="game">
+          <h1>かさでキャッチゲーム</h1>
+          <div class="game-info">
+            <p>スコア：<span id="score">0</span></p>
+            <p>残り時間：<span id="time">30</span>秒</p>
+          </div>
+          <!-- ゲーム中の得点表 -->
+          <div class="game-score-point">
+            <span>
+              <img src="./img/blue.PNG" alt="キャンディー" />
+              1～4 point
+            </span>
+            <span>
+              <img src="./img/same.PNG" alt="さめ" />
+              7～10 point
+            </span>
+            <span>
+              <img src="./img/onion1.PNG" alt="たまねぎ" />
+              -3～-7 point
+            </span>
+          </div>
+          <div id="game-area">
+            <!-- 傘 -->
+            <div id="umbrella">
+              <img src="./img/UVXW0582.PNG" alt="傘" />
+            </div>
+          </div>
+          <!-- スマホ用操作ボタン -->
+          <div class="control-buttons">
+            <button id="left-button" type="button">←</button>
+            <button id="right-button" type="button">→</button>
+          </div>
+          <p class="how-to">キーボードの ← → キー、または ← → ボタンで傘を動かして、サメと飴をキャッチ！<br /><small>※スマホ・タブレットでは傘をスライドさせることもできます。</small></p>
+        </div>
+      </div>
+      <!-- ゲームオーバー画面 -->
+      <div id="game-over-screen">
+        <div class="bk-grund">
+          <h1>ゲーム終了！</h1>
+          <div class="youseisann-position">
+            <img src="./img/tuyunoyouseisann.PNG" alt="梅雨の妖精さん" />
+          </div>
+          <p class="final-score">スコア：<span id="final-score">0</span> point</p>
+          <button id="restart-button">もう一度遊ぶ</button>
+          <p>Thank you for playing!</p>
+          <div id="restart-countdown"></div>
+          <a href="#" id="title-back">← タイトルページに戻る</a>
+        </div>
+      </div>
+    </main>
+    <!-- JavaScript -->
+    <!-- cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- 制作js -->
+    <script src="./js/game.js"></script>
+  </body>
+</html>
