@@ -189,12 +189,14 @@ body {
   font-size: 16px;
 }
 /* スマホ用操作ボタン */
+
 .control-buttons {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 10px;
 }
+
 .control-buttons button {
   width: 70px;
   height: 55px;
@@ -206,13 +208,18 @@ body {
   font-size: 30px;
   font-weight: 800;
   cursor: pointer;
+
+  /* スマホのタップ操作 */
+  touch-action: manipulation;
   user-select: none;
+  -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
+
 .control-buttons button:active {
   background: #4a9fd1;
   transform: scale(0.95);
-}
+} 
 /* =================
    ゲームオーバー画面
 =================== */
